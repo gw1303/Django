@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isityourbirthday</title>
+
+    <style>
+        .ans {
+            font-size: 200px;
+            color: goldenrod
+        }
+    </style>
+</head>
+<body>
+    <p>오늘의 날짜 : {% now 'DATE_FORMAT' %}</p>
+    <p>오늘이 생일입니까?</p>
+    {% if month == 1 and day == 6 %}
+        <p class="ans">네</p>
+    {% else %} 
+        <p class="ans">아니요</p>
+    {% endif %}
+</body>
+</html>
